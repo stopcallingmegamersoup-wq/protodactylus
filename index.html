@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protodactylus - Game Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🎮 Protodactylus</h1>
+        <p>Your Personal Game Hub</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="games-grid">
+                <!-- Game cards will be inserted here -->
+                <div class="game-card" data-game="game-1">
+                    <div class="game-thumbnail">
+                        <span class="play-icon">▶</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>Game 1</h3>
+                        <p>Add your game URL</p>
+                    </div>
+                </div>
+
+                <div class="game-card" data-game="game-2">
+                    <div class="game-thumbnail">
+                        <span class="play-icon">▶</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>Game 2</h3>
+                        <p>Add your game URL</p>
+                    </div>
+                </div>
+
+                <div class="game-card" data-game="game-3">
+                    <div class="game-thumbnail">
+                        <span class="play-icon">▶</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>Game 3</h3>
+                        <p>Add your game URL</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Fullscreen Game Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeGame()">&times;</button>
+            <button class="fullscreen-btn" onclick="toggleFullscreen()" title="Toggle Fullscreen">⛶</button>
+            <iframe id="gameFrame" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Protodactylus. Have fun playing! 🎯</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
